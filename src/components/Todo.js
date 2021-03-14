@@ -10,6 +10,7 @@ export const Todo = ({todo: {id, text, completed}, todos, setTodos}) => {
             if (item.id == id) { return {...item, completed:!item.completed} } else return item
         }))
     };
+    // Html
   return (
     <div className='todo'>
       <li className={`todo-item ${completed ? "completed" : ""}`}>{text}</li>
